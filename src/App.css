@@ -13,8 +13,55 @@ button {
     color: #fff;
     font-size: 16px;
     letter-spacing: 1px;
-    background: #603bbb;
+    background: #e4672e;
     cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transition: 1s;
+    background: rgb(189, 77, 25);
+}
+
+.App {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0 50%;
+    padding: 0 20px;
+    background: #101010;
+    width: 100vw;
+    height: 100vh;
+}
+
+form {
+    background: black;
+    width: 100%;
+    padding: 3rem;
+    border-radius: 12px;
+    max-width: 450px;
+    height: 350px;
+    box-shadow: 0px 0px 2px 10px #00000026;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+input {
+    height: 2rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: none;
+    padding: 8px;
 }
 
 .login {
@@ -93,7 +140,7 @@ button {
 }
 
 .hero nav {
-    background: #603bbb;
+    background: #e4672e;
     width: 100%;
     padding: 20px 40px;
     display: flex;
@@ -108,5 +155,5 @@ button {
 .hero nav button {
     width: 86px;
     padding: 8px 0;
-    background: #3a2b58;
+    background: #e4672e;
 }

@@ -20,12 +20,12 @@ function App() {
     <div className="App">
        <form onSubmit={handleLogin}>
         <div className="inputContainer">
-        <label htmlFor="email"></label>
-        <input type="email" name='email' onChange={(e) => setEmail(e.target.value)} />
+        <label htmlFor="email">Email</label>
+        <input type="email" name='email' onChange={(e) => setEmail(e.target.value)} required />
         </div>
         <div className="inputContainer">
-        <label htmlFor="password"></label>
-        <input type="password" name='password' onChange={(e) => setPassword(e.target.value)} />
+        <label htmlFor="password">Senha</label>
+        <input type="password" name='password' onChange={(e) => setPassword(e.target.value)} required />
         </div>
         <button type='submit'>Login</button>
        </form>
