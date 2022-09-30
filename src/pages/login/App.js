@@ -1,7 +1,7 @@
 import './App.css';
 
 import { useState } from 'react';
-import { signIn } from './services/request';
+import { signIn } from '../../services/request';
 
 function App() {
     const [email, setEmail] = useState('')
@@ -10,8 +10,8 @@ function App() {
     const handleLogin = async (event) => {
         event.preventDefault()
         const data = {
-            "email": "Miqueis@Miqueias.com",
-            "password": "1234567"
+            "email": email,
+            "password": password
         }
         await signIn(data)
     }
